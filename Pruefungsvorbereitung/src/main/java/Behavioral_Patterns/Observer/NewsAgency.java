@@ -15,7 +15,7 @@ public class NewsAgency implements Publisher {
     }
 
     @Override
-    public void update(String s) {
+    public void update() {
         sendNotifications();
     }
 
@@ -28,7 +28,7 @@ public class NewsAgency implements Publisher {
 
     private void setNews(String news){
         this.news = news;
-        this.update(news);
+        this.update();
     }
 
 }

@@ -3,6 +3,7 @@ package Creational_Patterns.Singleton;
 import Creational_Patterns.Factory.Auto;
 import Creational_Patterns.Factory.Fahrzeug;
 import Creational_Patterns.Factory.ProductionFactory;
+import Lamda.Lamda;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -40,6 +41,15 @@ public class SingletonTest {
         assertEquals(test,test2);
     }
 
+    @Test
+    public void test4(){
+        assertTrue(true);
+    }
+
+    @Test
+    public void test5(){
+        assertFalse(false);
+    }
 
 
 

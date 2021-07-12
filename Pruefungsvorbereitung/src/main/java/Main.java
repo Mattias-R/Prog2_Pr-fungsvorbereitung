@@ -147,7 +147,14 @@ public class Main {
 
         Concat te = (c,d) -> c + d;
         System.out.println(te.concat("hallo ", "Welt"));
+        System.out.println();
 
+
+        List<Person> list2 = list.stream().filter(g -> g.getSalery()> 3000).collect(Collectors.toList());
+        for (Person er : list2
+             ) {
+            System.out.println(er.getName());
+        }
 
 
     }

@@ -80,6 +80,21 @@ public class Main {
         // STREAMS------------------------------
 
 
+        System.out.println();
+        try{
+            System.out.println("1");
+            throw new Exception();
+
+        }catch(Exception e){
+            System.out.println("2");
+        }finally {
+            System.out.println("3");
+        }
+        System.out.println();
+
+        //_------------------
+
+
         Person Peter = new Person("Peter", 28,2000, Person.Gender.Male);
         Person Hans = new Person("Hans", 21,3500, Person.Gender.Male);
         Person Sabine = new Person("Sabine", 18,3100, Person.Gender.Female);
@@ -127,10 +142,11 @@ public class Main {
         System.out.println("-------------");
         System.out.println(highestSalery);
 
+        System.out.println();
+        System.out.println();
 
-
-
-
+        Concat te = (c,d) -> c + d;
+        System.out.println(te.concat("hallo ", "Welt"));
 
 
 

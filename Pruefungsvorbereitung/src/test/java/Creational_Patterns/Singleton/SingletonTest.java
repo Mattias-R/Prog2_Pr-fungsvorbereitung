@@ -32,6 +32,13 @@ public class SingletonTest {
         assertArrayEquals(test3,test2);
     }
 
+    @Test
+    public void test3(){
+        Singleton test = Singleton.getInstance();
+        Singleton test2 = Singleton.getInstance();
+
+        assertEquals(test,test2);
+    }
 
 
 
